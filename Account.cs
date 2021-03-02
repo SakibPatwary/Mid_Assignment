@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MidAssignment1
 {
-    public class Account
+    class Account
     {
         private int accountNumber;
         private string accountName;
