@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace MidAssignment1
 {
@@ -124,11 +124,8 @@ namespace MidAssignment1
                 }
                 else if (x == 4)
                 {
-                    Console.Write("Enter You Account Number : ");
-                    int accountNumber = Convert.ToInt32(Console.ReadLine());
-                    int found = b1.SearchAccount(accountNumber);
-                    if (found >= 0) b1.PrintAccountDetails(found);
-                    else Console.WriteLine("No such Account.......");
+                    Console.WriteLine("The information of the accounts are: ");
+                    b1.PrintAccountDetails();
 
                 }
                 else if (x == 5)
