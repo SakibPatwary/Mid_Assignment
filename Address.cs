@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MidAssignment1
 {
-    public class Address
+    class Address
     {
         private string roadNo;
         private string houseNo;
