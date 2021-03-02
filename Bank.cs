@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MidAssignment1
 {
-    public class Bank
+    class Bank
     {
         private string bankName;
         private Account[] myBank;
@@ -28,18 +28,17 @@ namespace MidAssignment1
         public void AddAccount(Account account)
         {
             bool flag = false;
-            int num = -1;
             for (int i = 0; i < myBank.Length; i++)
             {
                 if (myBank[i] == null)
                 {
                     myBank[i] = account;
                     flag = true;
-                    num = i;
+                    myBank[i].AccountNumber = i;
                     break;
                 }
             }
-            if (flag) Console.WriteLine("Account Added....\nYour Account Number = {0} ", myBank[num].AccountNumber);
+            if (flag) Console.WriteLine("Account Added.....");
             else Console.WriteLine("Can not add.....");
         }
         public void DeleteAccount(int accountNumber)
@@ -98,7 +97,7 @@ namespace MidAssignment1
             if (flag) return i;
             else return -1;
         }
-        public void PrintAccountDetails(int index)
+        public void PrintAccountDetails()
         {
             Console.WriteLine("Bank Name : " + this.bankName);
            
